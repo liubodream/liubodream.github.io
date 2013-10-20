@@ -1,0 +1,75 @@
+/*=================================*/
+/* Nivo Slider Demo
+/* November 2010
+/* By: Gilbert Pellegrom
+/* http://dev7studios.com
+/*=================================*/
+
+.main {
+    font-family:sans-serif;
+}
+
+/*====================*/
+/*=== Reset Styles ===*/
+/*====================*/
+ul {
+	list-style: none;
+}
+a:hover {text-decoration: underline; color: red;}
+
+tr.edu-head {
+    font-weight:bold;
+}
+td.edu {
+    width:100px;
+}
+td.papers {
+    width:100px;
+}
+tr.papers-head {
+    font-weight:bold;
+}
+td.research {
+    width:100px;
+}
+tr.research-head {
+    font-weight:bold;
+}
+td.prize {
+    width:100px;
+}
+tr.prize-head {
+    font-weight:bold;
+}
+#portrait {
+	width:136px;
+	height:120px;
+	background-image:url(renren.jpg);
+	float:right;
+	background-size:136px 120px;
+}
+#hello {
+	width:800px;
+	height:120px;
+	float:right;
+
+}
+
+/*====================*/
+/*===drop down ===*/
+/*====================*/
+
+
+
+ul.dropdown                         { position: relative; 
+									  z-index:10; margin: auto; 
+									  font-family:Verdana, Geneva, sans-serif;
+									  font-size:1.4em;
+									  height:28px;
+									  margin-bottom: 3px}
+									  
+ul.dropdown li.title                     { float: left; zoom: 1;}
+ul.dropdown li a                    { display: block;}
+ul.dropdown li.title a {padding: 0px 20px;}
+
+
