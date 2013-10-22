@@ -8,6 +8,9 @@
 .main {
     font-family:sans-serif;
 }
+.main1 {
+    font-family:sans-serif;
+}
 
 /*====================*/
 /*=== Reset Styles ===*/
@@ -42,11 +45,11 @@ tr.prize-head {
     font-weight:bold;
 }
 #portrait {
-	width:136px;
-	height:120px;
-	background-image:url(renren.jpg);
+	width:149px;
+	height:146px;
+	background-image:url(portrait.jpg);
 	float:right;
-	background-size:136px 120px;
+	background-size:149px 146px;
 }
 #hello {
 	width:800px;
