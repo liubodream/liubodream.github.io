@@ -74,5 +74,7 @@ ul.dropdown                         { position: relative;
 ul.dropdown li.title                     { float: left; zoom: 1;}
 ul.dropdown li a                    { display: block;}
 ul.dropdown li.title a {padding: 0px 20px;}
-
+ul.dropdown li.titlenew                     { float: left; zoom: 1;}
+ul.dropdown li a                    { display: block;}
+ul.dropdown li.titlenew a {padding: 0px 20px;}
 

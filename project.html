@@ -11,7 +11,14 @@
  </head>
 
  <body class="main1">
-  <h1>Project List</h1>
+
+  <ul class="dropdown">
+    <li class="titlenew"><a href="index.html" style="text-decoration:none" target="_blank">Home</a></li>
+    <li class="titlenew"><a href="project.html" style="text-decoration:none">Projects</a></li>
+    <li class="titlenew"><a href="cv.pdf" target="_blank" style="text-decoration:none">CV</a>
+  </ul>
+
+  <h1>Projects Experience</h1>
   <h2 id="project1">
    Highlight Detection in Soccer Video
   </h2>
@@ -20,19 +27,19 @@
                 <h4 style="margin-top:0">Objective</h4>
                 <p>We propose a novel and computationally efficient framework for soccer video highlight detection. The proposed framework includes some new low-level soccer video processing algorithms, such as shot boundary detection, grass color region detection, view type classification, and play position classification, as well as several higher-level algorithms for slow-motion replay detection, score change detection and goal event detection.The system can output two types of summaries: i) all slow-motion replay segments in a game, ii) all goals in a game.</p>
                 <h4>Overview and Challenges</h4>
-                <p>With the rapid development of multimedia production and transmission technology, how to more effectively, more accurately analyze a large scale of sports video data and extract sports video summarization according to users preferences is becoming a meaningful and challenging topic. Besides, how to computationally efficient and robust is anther challenge we faced with. </p>
+                <p>With the rapid development of multimedia production and transmission technology, how to more effectively, more accurately analyze a large scale of sports video data and extract sports video summarization according to users preferences is becoming a meaningful and challenging topic. Therefore, sports video processing needs to be completed automatically and the processing results must be semantically meaningfully. Besides, how to computationally efficiently and robustly detect highlight in soccer video is another challenge. </p>
                 <h4>The Journey</h4>
-                <p> This project lasted more than half year of my senior and was chosen as my undergraduation project and bachelor thesis. The whole system and its demo project are designed and developed by myself.
-                In general, highlight in a soccer video are the special events that audiences are especially interested in, e.g. goals, shoots, fouls, corner-kicks and free kicks etc. Among all the events above, slow-motion replay and goal events weigh most. In this paper, we propose a novel soccer video processing framework that could not only satisfy these requirements but also very effectively and accurately detect replay, goal events and deliver a soccer video summarization to users.
+                <p> This project lasted more than half year of my senior and was chosen as my undergraduation project and bachelor thesis. The whole system and its demo project are designed and developed by myself. Among all the highlight events in soccer video, slow-motion replay and goal events weigh most. In the proposed system, we think some cues in videos are helpful to detect highlight event, so I take soccer video analysis as the first step. In the system, I design some new low-level soccer video processing algorithms, such as shot boundary detection, grass color region detection, view type classification, and play position classification, which use some visual features. Then I introduce new algorithms for fully automatic and computation efficient detection of slow-motion replay and goal event in soccer videos. One two-hour long video costs less than two minutes useing a single cpu in our system. Finally, my efficient and effective framework for soccer video analysis and summarization that combines these algorithms in a scalable fusion outtputs two types of summaries: i) all slow-motion replay segments in a game, ii) all goals in a game and demonstrated in the web demo.
                 </p>
                 <h4>Project Info</h4>
                 <p> 
-                    <span class="inlineRed">Advisor:</span> <a href="" target="_blank" style="text-decoration:none">Dong Yuan</a><br/>
-                    <span class="inlineRed">Languages & Tools:</span> C++, shell, Python, HTML5, CSS3, JavaScript(JQuery).<br />
-                    <span class="inlineRed">Timeline:</span> February 2013 - September 2013
+                    <span class="inlineRed">Advisor: </span> <a href="http://sice.bupt.edu.cn/master/tutors/pris.htm" target="_blank" style="text-decoration:none">Dong Yuan</a><br/>
+                    <span class="inlineRed">Languages & Tools: </span> C++, linux, OpencvLib, ffmepg, shell, Python, HTML5, CSS3, JavaScript(JQuery).<br />
+                    <span class="inlineRed">Timeline: </span> December 2012 - September 2013
                 </p>
 				<h4><a href="http://i-kan.tv/playz.html?naname=soccer&chname=soccer0&dateListXml=soccer0_channel.xml" style="text-decoration:none" target="_blank">Demo Click Here</a></h4>
-            </div>
+				<div style="position:relative;top:-20px">(Replay and score change detection modules are completely designed and developed by me)</div>
+			</div>
 			
    </div>
    
@@ -44,41 +51,40 @@
                 <h4 style="margin-top:0">Objective</h4>
                 <p>This study addresses approaches for MSR-Bing Image Retrieval Challenge to assess the relevance on a pair of query term and image. Our approaches aim to boost the performance of web scale image retrieval, where images in the initial list (indexed by query term) can be re-ranked based on their relevances. One year BING image retrieval logs are used to develop the relevance assessment system. Several visual features are employed to describe one image. A visual similarity learning algorithm is introduced to train a weighted image similarity.</p>
                 <h4>Overview and Challenges</h4>
-                <p>Traditional solutions is training a set of classifiers for different topics and assessing the relevance by the classifier related to a specific query term. It is hard to scale up when dealing with a huge amount of concepts. Training a classifier for each topic is impractical. A retrieval-based method is proposed to handle this problem.</p>
+                <p>The task of MSR-Bing Image Retrieval Challenge to assess the relevance between query terms and images. The system need to return a floating point score to reflect their relevance. The single score does not play any significant role. We more concern the score order of images under the same query term. The initial set of images indexed by text can be re-ranked based on the score so that the image search engine can be optimized.</p>
                 <h4>The Journey</h4>
-                <p> This project lasted more than half year of my senior and was chosen as my undergraduation project and bachelor thesis. The whole system and its demo project are designed and developed by myself.
-                In general, highlight in a soccer video are the special events that audiences are especially interested in, e.g. goals, shoots, fouls, corner-kicks and free kicks etc. Among all the events above, slow-motion replay and goal events weigh most. In this paper, we propose a novel soccer video processing framework that could not only satisfy these requirements but also very effectively and accurately detect replay, goal events and deliver a soccer video summarization to users.
+                <p>The system consist of three modules. We firtly propose a framwork of online classification scheme. Related images are retrieved by indexing the clicked queries in database based on test query. The relevance of the query-image pair is scored by computing the visual similarity between the test image and images indexed by the query. Then we introduce a framwork of cluster-based query-image relevance assessment. Some visual features are employed to describe the visual contents. The score of a query-image pair is given through computing the visual similarity between the test image and database samples which are relevant in the text domain. Finally, we propose a new algorithm of visual similarity learning. Instead of using purely visual similarity measurement, we learn a weighted cosine similarity.
                 </p>
                 <h4>Project Info</h4>
                 <p> 
-                    <span class="inlineRed">Advisor:</span> <a href="" target="_blank" style="text-decoration:none">Dong Yuan</a><br/>
-					<span class="inlineRed">Collaborators:</span> Wang Lezi, Cen Shusheng, Huangchong<br/>
-                    <span class="inlineRed">Languages & Tools:</span> C++, Opencv Lib, shell, Python, HTML5, CSS3, JS.<br />
-					<span class="inlineRed">Results:</span> <a href="http://web-ngram.research.microsoft.com/GrandChallenge/Default.aspx" style="text-decoration:none" target="_blank">2nd Place</a><br/>
-                    <span class="inlineRed">Timeline:</span> March 2013 - July 2013
+                    <span class="inlineRed">Advisor: </span> <a href="http://sice.bupt.edu.cn/master/tutors/pris.htm" target="_blank" style="text-decoration:none">Dong Yuan</a><br/>
+					<span class="inlineRed">Collaborators: </span> Wang Lezi, Cen Shusheng, Hongliang Bai, Huangchong<br/>
+                    <span class="inlineRed">Languages & Tools: </span> C++, OpencvLib, linux, shell, Python.<br />
+					<span class="inlineRed">Results: </span> <a href="http://web-ngram.research.microsoft.com/GrandChallenge/Default.aspx" style="text-decoration:none" target="_blank">2nd Place</a><br/>
+                    <span class="inlineRed">Timeline: </span> April 2013 - July 2013
                 </p>
+				<a href="http://research.microsoft.com/en-us/events/irc2013/" target="_blank" style="text-decoration:none"><h4>More details refer to MSR-Bing IRC 2013</h4></a>
             </div>
 			
   </div>
   <h2 id="project3" style="position:relative;top:10px">
-   IPv4-based DOS Attact
+   IPv4-based SYN Flood Attack
   </h2>
   <div class="project">
             <div class="projectcontent">
                 <h4 style="margin-top:0">Objective</h4>
-                <p>This study addresses approaches for MSR-Bing Image Retrieval Challenge to assess the relevance on a pair of query term and image. Our approaches aim to boost the performance of web scale image retrieval, where images in the initial list (indexed by query term) can be re-ranked based on their relevances. One year BING image retrieval logs are used to develop the relevance assessment system. Several visual features are employed to describe one image. A visual similarity learning algorithm is introduced to train a weighted image similarity.</p>
+                <p>SYN Flood attack is currently one of the most popular ways of DoS (Denial of Service attacks), which takes advantage of the TCP protocol loophole with sending a large number of forged TCP connection requests, and making the resources of the attacked servers depleted (CPU full load or memory insufficient).</p>
                 <h4>Overview and Challenges</h4>
-                <p>Traditional solutions is training a set of classifiers for different topics and assessing the relevance by the classifier related to a specific query term. It is hard to scale up when dealing with a huge amount of concepts. Training a classifier for each topic is impractical. A retrieval-based method is proposed to handle this problem.</p>
+                <p>Denial of Service attack is that an attacker tries different ways to stop the target machines or servers providing services. The basic principle of this method of attack is based on the process of TCP connection. TCP is different from UDP, where the former is based on the connection and TCP connection should be built before transferring datas between server and client. The connection process is called three-way handshake in TCP protocol. We packet and send a large of numbers of forged IP/Tcp packages to a target machine with the open source winpcap lib.</p>
                 <h4>The Journey</h4>
-                <p> This project lasted more than half year of my senior and was chosen as my undergraduation project and bachelor thesis. The whole system and its demo project are designed and developed by myself.
-                In general, highlight in a soccer video are the special events that audiences are especially interested in, e.g. goals, shoots, fouls, corner-kicks and free kicks etc. Among all the events above, slow-motion replay and goal events weigh most. In this paper, we propose a novel soccer video processing framework that could not only satisfy these requirements but also very effectively and accurately detect replay, goal events and deliver a soccer video summarization to users.
+                <p> This project was designed and conducted in my junior, lasting approximately two months and was selected to participate in BUPT Undergraduate Innovation Project. Fortunately, we gained the class II award among all the teams. In the attack system, we should firstly packet the IP/Tcp packages with the open source winpcap lib, which includes some basic data process, such as populating IP header, TCP header ,Etherner header and checksum function. Then we use a fake IP address to attack a machine with IP address we know in advance. In addition, we should make sure the 8080 port of the target machine is open. The attack effect is rather obvious that the CPU utilization of the target machine ascend suddenly nearly approaching for 100%, which make the server unresponsive. The attack process above called SYN Flood.    
                 </p>
                 <h4>Project Info</h4>
                 <p> 
-                    <span class="inlineRed">Advisor:</span>Jing Zhengping<br/>
-					<span class="inlineRed">Collaborators:</span> Lv Shaojie, Li Jun<br/>
-                    <span class="inlineRed">Languages & Tools:</span> C.<br />
-					<span class="inlineRed">Results:</span> <a href="http://web-ngram.research.microsoft.com/GrandChallenge/Default.aspx" style="text-decoration:none" target="_blank">2nd Place</a><br/>
+                    <span class="inlineRed">Advisor: </span>Jing Zhengping<br/>
+					<span class="inlineRed">Collaborators: </span> Lv Shaojie<br/>
+                    <span class="inlineRed">Languages & Tools: </span> C, windows, winpcap, appache<br />
+					<span class="inlineRed">Results: </span>class II award</a><br/>
                     <span class="inlineRed">Timeline:</span> March 2013 - July 2013
                 </p>
             </div>
